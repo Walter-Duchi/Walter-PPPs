@@ -1,0 +1,28 @@
+.navContainer {
+  width: 100%;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 92%;
+}
+
+.navButton {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+
+
+
+.navButton:hover {
+  opacity: 0.8;
+}

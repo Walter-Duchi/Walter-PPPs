@@ -1,0 +1,188 @@
+/* ModalPago.module.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalPago {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cerrarModal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.cerrarModal:hover {
+  color: #253b4a;
+}
+
+.modalPago h1 {
+  color: #253b4a;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.metodoPago {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+.metodoPago h2 {
+  color: #253b4a;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.instrucciones {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.botonPago {
+  width: 100%;
+  padding: 12px;
+  background-color: #253b4a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1rem;
+}
+
+.botonPago:hover {
+  background-color: #1a2d3a;
+  transform: translateY(-2px);
+}
+
+.botonPago.datafast {
+  background-color: #2E7D32;
+}
+
+.botonPago.datafast:hover {
+  background-color: #1B5E20;
+}
+
+.separador {
+  text-align: center;
+  margin: 20px 0;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.datafastInfo {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Image container styles */
+.imagenCentrada {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+/* Specific styles for Datafast image */
+.datafastImagen {
+  margin: 15px 0 30px;
+}
+
+/* Payment value styles */
+.valorPagarContainer {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.valorPagar {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Powered by image styles */
+.poweredByImage {
+  margin-top: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .modalPago {
+    padding: 20px;
+  }
+  
+  .valorPagar {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalPago {
+    padding: 15px;
+  }
+  
+  .metodoPago {
+    padding: 10px;
+  }
+  
+  .valorPagar {
+    font-size: 1.3rem;
+  }
+  
+  .modalPago h1 {
+    font-size: 1.3rem;
+  }
+  
+  .metodoPago h2 {
+    font-size: 1.1rem;
+  }
+  
+  .botonPago {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
